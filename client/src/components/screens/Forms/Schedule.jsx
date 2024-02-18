@@ -37,7 +37,8 @@ const Schedule = () => {
         mobile,
       };
 
-      const ContactApiUrl = "http://localhost:5000/api/schedule";
+      const ContactApiUrl =
+        "https://caring-nest-deployment-server.onrender.com/api/schedule";
       const response = await axios.post(ContactApiUrl, scheduleFormData, {
         headers: {
           "Content-Type": "application/json",

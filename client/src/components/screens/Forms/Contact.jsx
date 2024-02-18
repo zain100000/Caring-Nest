@@ -34,7 +34,8 @@ const Contact = () => {
         message,
       };
 
-      const ContactApiUrl = "http://localhost:5000/api/contact";
+      const ContactApiUrl =
+        "https://caring-nest-deployment-server.onrender.com/api/contact";
       const response = await axios.post(ContactApiUrl, contactformData, {
         headers: {
           "Content-Type": "application/json",
